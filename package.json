@@ -20,7 +20,11 @@
   "keywords": [
     "wowser"
   ],
-  "author": "",
+  "author": "fallenoak",
+  "contributors": [
+    "fallenoak",
+    "timkurvers"
+  ],
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
