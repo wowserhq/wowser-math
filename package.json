@@ -16,19 +16,12 @@
     "README.md",
     "dist"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wowserhq/wowser-math.git"
-  },
+  "repository": "wowserhq/wowser-math",
   "keywords": [
     "wowser"
   ],
   "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wowserhq/wowser-math/issues"
-  },
-  "homepage": "https://github.com/wowserhq/wowser-math#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-jest": "^21.0.0",
