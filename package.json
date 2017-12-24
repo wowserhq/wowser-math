@@ -21,10 +21,6 @@
     "wowser"
   ],
   "author": "Wowser Contributors",
-  "contributors": [
-    "fallenoak",
-    "timkurvers"
-  ],
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
