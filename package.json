@@ -2,6 +2,9 @@
   "name": "wowser-math",
   "version": "0.1.0",
   "description": "Math library for Wowser",
+  "author": "Wowser Contributors",
+  "repository": "github:wowserhq/wowser-math",
+  "license": "MIT",
   "main": "dist/wowser-math.js",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
@@ -16,12 +19,9 @@
     "README.md",
     "dist"
   ],
-  "repository": "github:wowserhq/wowser-math",
   "keywords": [
     "wowser"
   ],
-  "author": "Wowser Contributors",
-  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-jest": "^21.0.0",
