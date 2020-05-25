@@ -94,6 +94,16 @@ describe('Vector2', () => {
     });
   });
 
+  describe('prototype.setElements()', () => {
+    test('sets elements in this vector', () => {
+      const vector = Vector2.of(7.0, 8.0);
+
+      vector.setElements(1.0, 2.0);
+
+      expect(vector).toEqual(Vector2.of(1.0, 2.0));
+    });
+  });
+
   describe('forEach()', () => {
     test('iterates over array', () => {
       const arr = new Float32Array([1.0, 2.0, 3.0, 4.0]);
