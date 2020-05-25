@@ -125,6 +125,13 @@ describe('Vector2', () => {
 
       expect(arr).toEqual(new Float32Array([0.0, 2.0, 0.0, 4.0]));
     });
+
+    test('throws if array length is not multiple of Vector2.LENGTH', () => {
+      const arr = new Float32Array([1.0, 2.0, 3.0]);
+      const callback = () => {};
+
+      expect(() => Vector2.forEach(arr, callback)).toThrow();
+    });
   });
 
   describe('keys()', () => {
@@ -144,6 +151,13 @@ describe('Vector2', () => {
       }
 
       expect(indices).toEqual([0, 1]);
+    });
+
+    test('throws if array length is not multiple of Vector2.LENGTH', () => {
+      const arr = new Float32Array([1.0, 2.0, 3.0]);
+      const iterator = Vector2.keys(arr);
+
+      expect(() => iterator.next()).toThrow();
     });
   });
 
@@ -188,6 +202,13 @@ describe('Vector2', () => {
       }
 
       expect(arr).toEqual(new Float32Array([9.0, 2.0, 9.0, 4.0]));
+    });
+
+    test('throws if array length is not multiple of Vector2.LENGTH', () => {
+      const arr = new Float32Array([1.0, 2.0, 3.0]);
+      const iterator = Vector2.values(arr);
+
+      expect(() => iterator.next()).toThrow();
     });
   });
 });
