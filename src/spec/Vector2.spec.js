@@ -16,6 +16,38 @@ describe('Vector2', () => {
     });
   });
 
+  describe('prototype.x', () => {
+    test('gets x component', () => {
+      const vector = Vector2.of(1.0, 2.0);
+
+      expect(vector.x).toEqual(1.0);
+    });
+
+    test('sets x component', () => {
+      const vector = Vector2.of(1.0, 2.0);
+
+      vector.x = 4.0;
+
+      expect(vector.x).toEqual(4.0);
+    });
+  });
+
+  describe('prototype.y', () => {
+    test('gets y component', () => {
+      const vector = Vector2.of(1.0, 2.0);
+
+      expect(vector.y).toEqual(2.0);
+    });
+
+    test('sets y component', () => {
+      const vector = Vector2.of(1.0, 2.0);
+
+      vector.y = 4.0;
+
+      expect(vector.y).toEqual(4.0);
+    });
+  });
+
   describe('prototype.approximates()', () => {
     test('returns true when vectors are approximately equal', () => {
       const vector1 = Vector2.of(0.0, 1.0);

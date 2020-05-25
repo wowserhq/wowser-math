@@ -44,6 +44,28 @@ class Vector2 extends Float32Array {
   }
 
   /**
+   * @type {Number}
+   */
+  get x() {
+    return this[0];
+  }
+
+  set x(x) {
+    this[0] = x;
+  }
+
+  /**
+   * @type {Number}
+   */
+  get y() {
+    return this[1];
+  }
+
+  set y(y) {
+    this[1] = y;
+  }
+
+  /**
    * Check for approximate equality against the given vector using given
    * epsilon.
    *
